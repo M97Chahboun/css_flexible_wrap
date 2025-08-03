@@ -31,6 +31,25 @@ This project demonstrates a responsive card layout using CSS Grid. The layout ad
 - The cards are styled to maintain a consistent look and feel across different devices.
 - You can modify the number of cards by adding or removing `<div class="card">...</div>` elements in the HTML file.
 
+## Tailwind Equivalent
+
+If you're using Tailwind CSS, you can achieve a similar responsive grid layout with the following utility classes. This allows for a clean and efficient way to implement a grid system without writing custom CSS.
+
+### Equivalent Tailwind CSS Implementation
+
+To replicate the functionality of `grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));`, you can use the following Tailwind CSS classes:
+
+```html
+<div class="grid grid-cols-[repeat(auto-fill,minmax(280px,1fr))] gap-4">
+    <div class="bg-gray-200 p-4 rounded-lg shadow">Card 1</div>
+    <div class="bg-gray-200 p-4 rounded-lg shadow">Card 2</div>
+    <div class="bg-gray-200 p-4 rounded-lg shadow">Card 3</div>
+    <div class="bg-gray-200 p-4 rounded-lg shadow">Card 4</div>
+    <div class="bg-gray-200 p-4 rounded-lg shadow">Card 5</div>
+    <div class="bg-gray-200 p-4 rounded-lg shadow">Card 6</div>
+</div>
+```
+
 ## Customization
 
 Feel free to customize the following:
